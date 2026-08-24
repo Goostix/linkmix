@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c338d" />
+    <meta name="description" content="A customizable link-in-bio page powered by Linkmix." />
+    <title>Your Name | Links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="config-loading">
+    <div class="config-loader" role="status"><span>✦</span> Loading Linkmix...</div>
+    <main class="page-shell">
+      <section class="profile-card no-avatar" aria-labelledby="profile-title">
+        <span class="doodle doodle-star" aria-hidden="true">✦</span>
+        <span class="doodle doodle-plus" aria-hidden="true">＋</span>
+        <div class="avatar-wrap" hidden><img src="" alt="Profile avatar" /></div>
+        <p class="eyebrow">HELLO, I AM</p>
+        <h1 id="profile-title">YOUR NAME<span>✦</span></h1>
+        <p class="intro">A short introduction about you and the things you share.</p>
+        <div class="social-links" aria-label="Social links"></div>
+        <div class="currently">
+          <span class="status-dot" aria-hidden="true"></span>
+          <p><small>LATEST UPDATE</small><strong>Share a short update, announcement, or current interest here.</strong></p>
+        </div>
+      </section>
+
+      <section class="link-section" id="links-root" aria-label="Profile links">
+        <div class="section-heading"><span>START HERE</span><i></i></div>
+        <a class="link-card featured" href="https://example.com">
+          <span class="icon blue">✦</span><span><strong>Welcome</strong><small>Introduce your most important link here</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+        </a>
+
+        <div class="section-heading"><span>MY PROJECTS</span><i></i></div>
+        <a class="link-card" href="https://example.com/project"><span class="icon yellow">🧪</span><span><strong>Example Project</strong><small>Add a short and useful description</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg></a>
+
+        <div class="section-heading"><span>USEFUL LINKS</span><i></i></div>
+        <a class="link-card" href="https://example.com/resource"><span class="icon aqua">🔗</span><span><strong>Example Resource</strong><small>Share a tool, referral, or useful find</small></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg></a>
+      </section>
+      <section class="tiny-note" aria-label="Optional note">
+        <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 2.7 20h18.6L12 3.5Z" /><path d="M12 9v5" /><circle cx="12" cy="17" r=".8" /></svg></span>
+        <p><strong>A small note</strong><small>Add an optional disclosure or helpful context for your visitors.</small></p>
+      </section>
+      <footer><div>BUILT WITH LINKMIX <span>✦</span></div><small>YOUR LINKS, YOUR STYLE.</small></footer>
+    </main>
+    <script>setTimeout(function(){document.body.classList.remove("config-loading")},5000)</script>
+    <script src="/config.js" defer></script>
+    <script src="/social-icons.js" defer></script>
+    <script src="/phone-icon.js" defer></script>
+    <script src="public.js" defer></script>
+  </body>
+</html>
