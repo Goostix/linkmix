@@ -1,0 +1,1 @@
+ALTER TABLE `link_config` ADD `profile_json` text DEFAULT '{}' NOT NULL;
